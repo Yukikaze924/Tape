@@ -3,9 +3,9 @@ use clap::Parser;
 use super::commands::ConfigCommand;
 
 #[derive(Parser)]
-pub struct AddArgs {
-    /// Filename to add
-    pub filename: String,
+pub struct NewArgs {
+    /// Project dirname
+    pub dirname: Option<String>,
 }
 
 #[derive(Parser)]

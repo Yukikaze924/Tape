@@ -5,7 +5,9 @@ pub fn setup_logger() -> Result<(), fern::InitError>
 {
     let colors: ColoredLevelConfig = ColoredLevelConfig::new()
         // use builder methods
-        .info(Color::Green);
+        .info(Color::Green)
+        .error(Color::Red)
+        .warn(Color::BrightYellow);
 
     fern::Dispatch::new()
         .format(move |out, message, record|

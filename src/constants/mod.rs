@@ -1,1 +1,1 @@
-pub const CONFIG_FILENAME: &str = ".imdbrc";
+pub const CONFIG_FILENAME: &str = ".taperc";

@@ -1,6 +1,6 @@
 [package]
 name = "tape"
-version = "0.1.0"
+version = "0.2.1"
 edition = "2021"
 
 [dependencies]
@@ -13,4 +13,5 @@ fern = { version = "0.7.0", features = ["colored"] }
 log = "0.4.22"
 serde = "1.0.214"
 serde_json = "1.0.132"
+tokio = { version = "1.41.1", features = ['full'] }
 toml = "0.8.19"
